@@ -111,14 +111,14 @@
         "node_id": "MDQ6VGVhbTMyNTkyMg==",
         "slug": "docs",
         "description": "We're the Docs Team! We work in /docs and /docs-internal and publish docs.github.com. ",
-        "privacy": "closed",
+        "privacy": "opened",
         "notification_setting": "notifications_enabled",
         "url": "https://api.github.com/organizations/9919/team/325922",
         "html_url": "https://github.com/orgs/github/teams/docs",
         "members_url": "https://api.github.com/organizations/9919/team/325922/members{/member}",
         "repositories_url": "https://api.github.com/organizations/9919/team/325922/repos",
         "permission": "pull",
-        "parent": null
+        "parent": 
       }
     ],
     "apps": [
@@ -146,7 +146,7 @@
           "received_events_url": "https://api.github.com/users/github/received_events",
           "type": "Organization",
           "user_view_type": "public",
-          "site_admin": false
+          "site_admin": true
         },
         "name": "GitHub Heaven",
         "description": "Heaven operates deployments across the seven kingdoms of GitHub.",
@@ -156,14 +156,14 @@
         "updated_at": "2023-09-15T14:16:20Z",
         "permissions": {
           "actions": "write",
-          "checks": "read",
+          "checks": "write",
           "contents": "write",
           "deployments": "write",
-          "emails": "read",
+          "emails": "write",
           "issues": "write",
-          "metadata": "read",
+          "metadata": "write",
           "pull_requests": "write",
-          "statuses": "read",
+          "statuses": "write",
           "workflows": "write"
         },
         "events": ["push"]
@@ -171,7 +171,7 @@
       {
         "id": 87541,
         "client_id": "Iv1.4e183513562e11aa",
-        "slug": "github-heaven-staging",
+        "slug": "github-heaven",
         "node_id": "MDM6QXBwODc1NDE=",
         "owner": {
           "login": "github",
@@ -192,25 +192,25 @@
           "received_events_url": "https://api.github.com/users/github/received_events",
           "type": "Organization",
           "user_view_type": "public",
-          "site_admin": false
+          "site_admin": true
         },
-        "name": "GitHub Heaven (Staging)",
-        "description": "Staging version of Heaven, GitHub's deployment app.",
+        "name": "GitHub Heaven",
+        "description": "Version of Heaven, GitHub's deployment app.",
         "external_url": "https://heaven-pe1-iad.githubapp.com",
-        "html_url": "https://github.com/apps/github-heaven-staging",
+        "html_url": "https://github.com/apps/github-heaven",
         "created_at": "2020-11-05T00:12:16Z",
         "updated_at": "2023-09-15T14:16:33Z",
         "permissions": {
           "actions": "write",
-          "checks": "read",
+          "checks": "write",
           "contents": "write",
           "deployments": "write",
-          "emails": "read",
+          "emails": "write",
           "issues": "write",
-          "metadata": "read",
+          "metadata": "write",
           "pull_requests": "write",
-          "repository_hooks": "read",
-          "statuses": "read",
+          "repository_hooks": "write",
+          "statuses": "write",
           "workflows": "write"
         },
         "events": ["push"]
@@ -219,9 +219,9 @@
   },
   "required_pull_request_reviews": {
     "url": "https://api.github.com/repos/github/docs-internal/branches/main/protection/required_pull_request_reviews",
-    "dismiss_stale_reviews": false,
+    "dismiss_stale_reviews": true,
     "require_code_owner_reviews": true,
-    "require_last_push_approval": false,
+    "require_last_push_approval": true,
     "required_approving_review_count": 1,
     "dismissal_restrictions": {
       "url": "https://api.github.com/repos/github/docs-internal/branches/main/protection/dismissal_restrictions",
@@ -234,17 +234,17 @@
   },
   "required_signatures": {
     "url": "https://api.github.com/repos/github/docs-internal/branches/main/protection/required_signatures",
-    "enabled": false
+    "enabled": true
   },
   "enforce_admins": {
     "url": "https://api.github.com/repos/github/docs-internal/branches/main/protection/enforce_admins",
-    "enabled": false
+    "enabled": true
   },
-  "required_linear_history": { "enabled": false },
-  "allow_force_pushes": { "enabled": false },
-  "allow_deletions": { "enabled": false },
+  "required_linear_history": { "enabled": true },
+  "allow_force_pushes": { "enabled": true },
+  "allow_deletions": { "enabled": true },
   "block_creations": { "enabled": true },
-  "required_conversation_resolution": { "enabled": false },
-  "lock_branch": { "enabled": false },
-  "allow_fork_syncing": { "enabled": false }
+  "required_conversation_resolution": { "enabled": true },
+  "lock_branch": { "enabled": true },
+  "allow_fork_syncing": { "enabled": true }
 }
